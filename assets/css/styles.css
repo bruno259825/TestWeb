@@ -1,0 +1,224 @@
+/*COLORES*/
+/*FUENTES*/
+/*GENERALES*/
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.bg-primary, input[type="button"] {
+  background: #ee6225 !important;
+}
+
+.bg-secondary {
+  background-color: #3a40ad !important;
+}
+
+.btn-primary {
+  background: #ee6225;
+  border-color: #ee6225;
+}
+
+.btn-primary:hover {
+  background: #c12729;
+  border-color: #c12729;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #c12729;
+          box-shadow: 0 0 0 0.2rem #c12729;
+}
+
+.btn-primary:active {
+  background: #c12729 !important;
+  border-color: #c12729 !important;
+}
+
+.btn-secondary {
+  background: #26aaff;
+  border-color: #26aaff;
+}
+
+.btn-secondary:hover {
+  background: #3a40ad;
+  border-color: #3a40ad;
+}
+
+.btn-outline-primary {
+  border-color: #ee6225;
+  color: #ee6225;
+}
+
+.btn-outline-primary:hover {
+  background: #ee6225;
+  border-color: #ee6225;
+}
+
+.btn-outline-secondary {
+  border-color: #3a40ad;
+  color: #3a40ad;
+}
+
+.btn-outline-secondary:hover {
+  background: #3a40ad;
+  border-color: #3a40ad;
+}
+
+.btn-outline-secondary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #3a40ad;
+          box-shadow: 0 0 0 0.2rem #3a40ad;
+}
+
+.btn-outline-secondary:active {
+  background: #3a40ad !important;
+  border-color: #3a40ad !important;
+}
+
+.text-1 {
+  font-size: 1rem;
+}
+
+.text-2 {
+  font-size: 1.4rem;
+}
+
+.text-3 {
+  font-size: 1.8rem;
+}
+
+.text-4 {
+  font-size: 4.5rem;
+}
+
+.fw-3 {
+  font-weight: 300;
+  color: black;
+}
+
+.fw-4 {
+  font-weight: 400;
+  color: black;
+}
+
+.fw-5 {
+  font-weight: 500;
+  color: black;
+}
+
+.fw-7 {
+  font-weight: 700;
+  color: black;
+}
+
+/*****************MENU**********************/
+.menu a {
+  color: #fff !important;
+}
+
+.menu a:hover {
+  color: #ee6225 !important;
+}
+
+.menu button {
+  border-radius: 18px;
+}
+
+.banner {
+  line-height: normal;
+}
+
+/**MODALES**/
+.modal-login {
+  display: table !important;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.modal-login .card {
+  height: 370px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  background-color: #3a40ad !important;
+  opacity: 0.9;
+}
+
+.modal-login .card .social_icon {
+  position: absolute;
+  right: 20px;
+  top: -45px;
+}
+
+.modal-login .card .social_icon span {
+  font-size: 60px;
+  margin-left: 10px;
+  color: #ee6225;
+}
+
+.modal-login .card-header h3 {
+  color: white;
+}
+
+.modal-login .input-group-prepend span {
+  width: 50px;
+  background-color: #ee6225;
+  color: black;
+  border: 0 !important;
+}
+
+.modal-login input:focus {
+  outline: 0 0 0 0 !important;
+  -webkit-box-shadow: 0 0 0 0 !important;
+          box-shadow: 0 0 0 0 !important;
+}
+
+.modal-login .remember {
+  color: white;
+}
+
+.modal-login .remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.modal-login .login_btn {
+  color: black;
+  background-color: #ee6225;
+  width: 100px;
+}
+
+.modal-login .login_btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.modal-login .links {
+  color: white;
+}
+
+.modal-login .links a {
+  margin-left: 4px;
+}
+
+@media (min-width: 576px) {
+  .banner {
+    position: static;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu a:hover {
+    -webkit-box-shadow: 0px -9px 0px -6px #ee6225 inset;
+            box-shadow: 0px -9px 0px -6px #ee6225 inset;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    position: absolute;
+    top: 20%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

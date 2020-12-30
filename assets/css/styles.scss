@@ -1,0 +1,230 @@
+/*COLORES*/
+$c-1: #ee6225;
+$c-2: #3a40ad;
+
+$c-3: #c12729;
+$c-4: #26aaff;
+
+/*FUENTES*/
+$fs-1: 1rem;
+$fs-2: 1.4rem;
+$fs-3: 1.8rem;
+$fs-4: 4.5rem;
+
+$fw-3: 300;
+$fw-5: 500;
+$fw-4: 400;
+$fw-7: 700;
+/*GENERALES*/
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.bg-primary,input[type="button"] {
+  background: #ee6225 !important;
+}
+
+.bg-secondary {
+  background-color: #3a40ad !important;
+}
+
+.btn-primary {
+  background: $c-1;
+  border-color: $c-1;
+  &:hover {
+    background: $c-3;
+    border-color: $c-3;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $c-3;
+  }
+  &:active {
+    background: $c-3 !important;
+    border-color: $c-3 !important;
+  }
+}
+
+.btn-secondary {
+  background: $c-4;
+  border-color: $c-4;
+  &:hover {
+    background: $c-2;
+    border-color: $c-2;
+  }
+}
+
+.btn-outline-primary {
+  border-color: $c-1;
+  color: $c-1;
+  &:hover {
+    background: $c-1;
+    border-color: $c-1;
+  }
+}
+
+.btn-outline-secondary {
+  border-color: $c-2;
+  color: $c-2;
+  &:hover {
+    background: $c-2;
+    border-color: $c-2;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $c-2;
+  }
+  &:active {
+    background: $c-2 !important;
+    border-color: $c-2 !important;
+  }
+}
+
+@mixin negro {
+  color: rgba(0, 0, 0, 1);
+}
+
+.text-1 {
+  font-size: $fs-1;
+}
+.text-2 {
+  font-size: $fs-2;
+}
+.text-3 {
+  font-size: $fs-3;
+}
+.text-4 {
+  font-size: $fs-4;
+}
+
+.fw-3 {
+  font-weight: $fw-3;
+  @include negro();
+}
+.fw-4 {
+  font-weight: $fw-4;
+  @include negro();
+}
+.fw-5 {
+  font-weight: $fw-5;
+  @include negro();
+}
+.fw-7 {
+  font-weight: $fw-7;
+  @include negro();
+}
+
+/*****************MENU**********************/
+.menu {
+  a {
+    color: #fff !important;
+    &:hover {
+      color: $c-1 !important;
+    }
+  }
+  button {
+    border-radius: 18px;
+  }
+}
+.banner {
+  line-height: normal;
+}
+
+/**MODALES**/
+
+.modal-login {
+    display: table !important;
+    height: 100%;
+  align-content: center;
+  
+  .card {
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    background-color:$c-2 !important;
+    opacity: 0.9;
+
+    .social_icon {
+      position: absolute;
+      right: 20px;
+      top: -45px;
+      span {
+        font-size: 60px;
+        margin-left: 10px;
+        color: $c-1;
+      }
+    }
+    
+  }
+
+  .card-header h3 {
+    color: white;
+  }
+
+  .input-group-prepend span {
+    width: 50px;
+    background-color: $c-1;
+    color: black;
+    border: 0 !important;
+  }
+
+  input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+  }
+
+  .remember {
+    color: white;
+    input {
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+        margin-right: 5px;
+      }
+  }
+
+  .login_btn {
+    color: black;
+    background-color: $c-1;
+    width: 100px;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+  }
+
+  .links {
+    color: white;
+    a{
+        margin-left: 4px;
+    }
+  }
+}
+
+
+
+@media (min-width: 576px) {
+  .banner {
+    position: static;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .menu a:hover {
+    box-shadow: 0px -9px 0px -6px $c-1 inset;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .banner {
+    position: absolute;
+    top: 20%;
+  }
+  body {
+  }
+}
